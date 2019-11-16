@@ -3,7 +3,7 @@ services:
     -docker
 
 before install:
-    - docker build -t ashpalsin/docker-react -f dockerfile.dev .
+    - docker build -t ashpalsin/docker-react -f Dockerfile.dev .
 
 script:
     -docker run -e CI=true ashpalsin/docker-react npm run test
